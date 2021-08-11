@@ -1,0 +1,9 @@
+{
+  "web": {
+  "BUrl": "http://localhost/mantisbt/"
+  },
+  "webadmin": {
+  "username": "administrator",
+  "password": "root"
+  }
+}
