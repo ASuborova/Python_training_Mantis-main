@@ -1,5 +1,7 @@
 from selenium import webdriver
 from fixture.sessionhelper import SessionHelper
+from fixture.progecthelper import ProgectHelper
+from generator.progect import GeneratorProgect
 
 
 class Application:
@@ -14,6 +16,8 @@ class Application:
             raise ValueError("Unknown browser %s" % browser)
         self.wd.implicitly_wait(5)
         self.ses_h = SessionHelper(self)
+        self.pog_h = ProgectHelper(self)
+        self.gen = GeneratorProgect(self)
         self.BUrl = BUrl
 
     def is_valid(self):
